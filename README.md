@@ -121,7 +121,7 @@ public class FruitClass : MonoBehaviour
 
 public static void Main()
 {
-  List<string> gameConsoles = new List<string>();
+ List<string> gameConsoles = new List<string>();
   
  gameConsoles.Add("PlayStation");
  gameConsoles.Add("Nintendo");
@@ -135,25 +135,56 @@ public static void Main()
 
 public static void Main()
 {
-  List<string> gameConsoles = new List<string>();
+ List<string> gameConsoles = new List<string>();
   
  gameConsoles.Add("PlayStation");
  gameConsoles.Add("Nintendo");
  gameConsoles.Add("Xbox");
  
- gameConsoles.Remove(3);
+ gameConsoles.RemoveAt(3);
  print(gameConsoles.Count);
 }
 
 #8
 
-
+public static void Main()
+{
+  List<string> clothes = new List<string>();
+  
+  clothes.Add("shirt");
+  clothes.Add("pants");
+  clothes.Add("shoes");
+  
+  clothes.Remove("pants");
+  print(clothes.Count);
+}
 
 #9
 
-
+public static void Main()
+{
+  List<string> clothes = new List<string>();
+  
+  clothes.Add("shirt");
+  clothes.Add("pants");
+  clothes.Add("shoes");
+  
+  clothes.RemoveAt("2");
+  print(clothes.Count);
+}
 
 #10
 
-
-
+public static void Main()
+{
+  List<string> tool = new List<string>();
+  tool.Add("Hammer");
+  tool.Add("Wrench");
+  
+  List<string> machine = new List<string>();
+  machine.Add("Car");
+  machine.Add ("Robot");
+  
+  tool.AddRange(machine);
+  print(tool.Count);
+}
