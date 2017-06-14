@@ -101,15 +101,49 @@ public class ArraryAndLists : MonoBehaviour
 
 #5
 
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic
 
+public class FruitClass : MonoBehaviour
+{
+  void Start ()
+  {
+    List<string> fruit = new List<string>();
+    
+    fruit.Add("Apple");
+    fruit.Add("Pear");
+    fruit.Add("Orange");
+  }
+}
 
 #6
 
-
+public static void Main()
+{
+  List<string> gameConsoles = new List<string>();
+  
+ gameConsoles.Add("PlayStation");
+ gameConsoles.Add("Nintendo");
+ gameConsoles.Add("Xbox");
+ 
+ gameConsoles.Remove("Xbox");
+ print(gameConsoles.Count);
+}
 
 #7
 
-
+public static void Main()
+{
+  List<string> gameConsoles = new List<string>();
+  
+ gameConsoles.Add("PlayStation");
+ gameConsoles.Add("Nintendo");
+ gameConsoles.Add("Xbox");
+ 
+ gameConsoles.Remove(3);
+ print(gameConsoles.Count);
+}
 
 #8
 
